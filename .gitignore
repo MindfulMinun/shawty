@@ -1,0 +1,5 @@
+# Ignore the db file
+/shawty.db
+
+# Ignore .env
+/.env
