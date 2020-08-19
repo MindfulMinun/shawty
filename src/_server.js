@@ -19,6 +19,7 @@ const db = new Datastore({ filename: './shawty.db', autoload: true })
 console.log(`Live: http://localhost:${PORT}`)
 
 // Listen for requests
+// @ts-ignore
 for await (const req of server) {
     // First, check if the request is to root or any other resource and handle it
     // Then, check for redirects

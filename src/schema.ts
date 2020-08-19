@@ -15,7 +15,7 @@ export interface Redirect {
     /** The redirect's ID. */
     id: string
     /** The hits pertaining to this specific redirect */
-    hits: Hit[]
+    // hits: Hit[]
 }
 
 export interface Hit {
