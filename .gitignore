@@ -1,5 +1,8 @@
 # Ignore the db file
-/shawty.db
+shawty.db
 
 # Ignore .env
 /.env
+
+# Ignore the agents file
+agents.*

@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --accent: #5ad;
+    --border-color: #424242;
+    --input-color: #bfbfbf;
+}
+
+:focus {
+    outline-style: dashed;
+    outline-width: 1px;
+    outline-offset: 4px;
+    outline-color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", Helvetica, sans-serif;
+}
+body {
+    background-color: #1e1e1e;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 720px;
+    width: 100%;
+}
+a[href] {
+    color: #5ad;
+    text-decoration: none;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    max-width: 920px;
+}
+footer {
+    padding: 2em;
+    text-align: center;
+    opacity: .52;
+}
+
+.inline-list {
+    list-style-type: none;
+    display: inline;
+    padding-left: initial;
+}
+.inline-list > li {
+    display: inline;
+}
+.inline-list > * + *:before {
+    content: " • ";
+    opacity: .52;
+}
+
+/*  */
+
+.url-form {
+    /* width: 100%; */
+    display: flex;
+    padding: 1em 0;
+    font-size: 1.25em;
+}
+
+.url-bar {
+    flex: 1;
+    display: block;
+    padding: 1em;
+    background: 0;
+    font: inherit;
+    color: var(--input-color);
+    background: 0;
+    border: 2px solid var(--border-color);
+    /* border-right: 0; */
+    /* transition: border-color 200ms ease-in-out; */
+    text-overflow: ellipsis;
+    outline: 0;
+}
+
+.url-btn {
+    width: 6em;
+    background-color: var(--border-color);
+    border: 2px solid var(--border-color);
+    /* border-left: 0; */
+    font: inherit;
+    font-size: 80%;
+    /* I'll be your boyfriend. */
+    color: var(--input-color);
+    /* background-color: var(--border-color); */
+    /* transition: background-color 200ms ease-in-out; */
+    /* border: 0; */
+}
+.url-btn:hover, .url-btn:focus {
+    border-color: #5ad;
+    background-color: #272727;
+}
+
+.url-bar:hover, .url-bar:focus {
+    border-color: #5ad;
+}
